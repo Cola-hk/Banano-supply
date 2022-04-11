@@ -14,7 +14,7 @@ var Circulating = Math.round(rawCirculating);
 var Uncirculating = Math.round(rawUncirculating);
 var Burned = Math.round(rawBurned);
 
-let array2 = new Array(Circulating, Uncirculating, Burned);
+let array2 = new Array(Burned, Circulating, Uncirculating);
 console.log(array2)
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
